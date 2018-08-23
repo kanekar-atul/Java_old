@@ -7,6 +7,19 @@
 		<class>com.main.model.Admin</class>
 		<class>com.crud.examples.model.Employee</class>
 		<class>com.jpql.main.model.Employee11</class>
+		
+		<class>com.inheritance.single.Staff</class>
+		<class>com.inheritance.single.TeachingStaff</class>
+		<class>com.inheritance.single.NonTeachingStaff</class>
+		
+		<class>com.inheritance.joined.StaffJoined</class>
+		<class>com.inheritance.joined.TeachingStaffJoined</class>
+		<class>com.inheritance.joined.NonTeachingStaffJoined</class>
+		
+		<class>com.inheritance.table.per.TeachingStaffTblPerClass</class>
+		<class>com.inheritance.table.per.StaffTblPerClass</class>
+		<class>com.inheritance.table.per.NonTeachingStaffTblPerClass</class>
+		
 		<properties>
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://localhost:3306/jpacore?useSSL=false" />
