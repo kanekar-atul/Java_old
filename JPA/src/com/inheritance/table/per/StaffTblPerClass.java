@@ -2,7 +2,6 @@ package com.inheritance.table.per;
 
 import java.io.Serializable;
 
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

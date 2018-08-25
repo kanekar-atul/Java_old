@@ -25,7 +25,7 @@
 				value="jdbc:mysql://localhost:3306/jpacore?useSSL=false" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
-				value="admin" />
+				value="pass123" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 			<property name="eclipselink.logging.level" value="FINE" />

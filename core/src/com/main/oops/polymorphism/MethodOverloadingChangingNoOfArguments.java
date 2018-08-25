@@ -1,4 +1,4 @@
-package com.main.oops;
+package com.main.oops.polymorphism;
 
 class Adder {
 	static int add(int a, int b) {

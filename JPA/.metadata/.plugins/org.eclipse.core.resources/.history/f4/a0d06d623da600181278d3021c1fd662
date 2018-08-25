@@ -1,0 +1,22 @@
+package com.main;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Main {
+
+	public static void main(String[] args) {
+	 
+		EntityManagerFactory factory =  Persistence.createEntityManagerFactory("JPA");
+		EntityManager manager =  factory.createEntityManager();
+		
+		Employee e = new Employee();
+		e.setId(1);
+		e.setName("Atul");
+		manager.getTransaction().begin();
+		manager.persist();
+		manager.close();
+	}
+
+}

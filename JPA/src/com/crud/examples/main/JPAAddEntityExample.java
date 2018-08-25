@@ -16,10 +16,10 @@ public class JPAAddEntityExample {
 		manager.getTransaction().begin();
 
 		Employee employee = new Employee();
-		employee.setEid(1206);
-		employee.setEname("Ram");
-		employee.setSalary(80000);
-		employee.setDeg("Jr.Developer");
+		employee.setEid(1203);
+		employee.setEname("Amit");
+		employee.setSalary(50000);
+		employee.setDeg("Sr.Developer");
 		
 		manager.persist(employee);
 		

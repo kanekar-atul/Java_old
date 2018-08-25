@@ -1,6 +1,5 @@
 package com.inheritance.joined;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 
