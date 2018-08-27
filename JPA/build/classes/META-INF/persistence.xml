@@ -4,7 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="JPACore">
-		<class>com.main.model.Admin</class>
+		<!-- <class>com.main.model.Admin</class>
 		<class>com.crud.examples.model.Employee</class>
 		<class>com.jpql.main.model.Employee11</class>
 		
@@ -18,7 +18,9 @@
 		
 		<class>com.inheritance.table.per.TeachingStaffTblPerClass</class>
 		<class>com.inheritance.table.per.StaffTblPerClass</class>
-		<class>com.inheritance.table.per.NonTeachingStaffTblPerClass</class>
+		<class>com.inheritance.table.per.NonTeachingStaffTblPerClass</class> -->
+		
+		<class>com.annotation.examples.Customer</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.url"
