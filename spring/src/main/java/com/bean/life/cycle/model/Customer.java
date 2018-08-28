@@ -1,6 +1,12 @@
 package com.bean.life.cycle.model;
 
-public class Customer {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
+import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+
+public class Customer implements BeanFactoryAware,BeanFactoryPostProcessor {
 
 	private int id;
 
@@ -8,14 +14,16 @@ public class Customer {
 
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
+		System.out.println("This is from Customer constructor");
 	}
 
 	public int getId() {
+		System.out.println("This is from Customer getId() ");
 		return id;
 	}
 
 	public void setId(int id) {
+		System.out.println("This is from Customer setId() ");
 		this.id = id;
 	}
 
@@ -34,5 +42,13 @@ public class Customer {
 
 	public void destroy() {
 		System.out.println("This is from destroy()");
+	}
+
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		System.out.println("This is from setBeanFactory()");
+	}
+
+	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+		System.out.println("This is from postProcessBeanFactory()");
 	}
 }
