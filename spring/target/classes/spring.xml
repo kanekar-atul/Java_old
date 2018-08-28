@@ -1,0 +1,50 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.main.model.Employee" id="employee">
+		<property name="id" value="1"></property>
+		<property name="name" value="Atul"></property>
+	</bean>
+
+	<bean id="helloWorld" class="com.main.model.HelloWorld">
+		<property name="message" value="Hello World"></property>
+	</bean>
+
+	<bean id="helloworld1" class="com.beanfactory.model.HelloWorld">
+		<property name="message" value="Hello World"></property>
+	</bean>
+
+	<bean id="helloworld2"
+		class="com.applicationcontext.model.HelloWorld">
+		<property name="message" value="Hello World"></property>
+	</bean>
+
+	<bean id="empsingleton"
+		class="com.bean.scope.model.EmployeeSingleton" scope="singleton">
+	</bean>
+
+	<bean id="empprototype"
+		class="com.bean.scope.model.EmployeeSingleton" scope="prototype">
+	</bean>
+
+
+	<bean id="a" class="com.bean.scope.model.A" scope="singleton">
+		<property name="b" ref="b"></property>
+	</bean>
+
+	<bean id="b" class="com.bean.scope.model.B" scope="prototype">
+	</bean>
+
+
+	<bean id="cust" class="com.bean.life.cycle.model.Cutomer"
+		init-method="init" destroy-method="destroy">
+		<property name="id" value="1234"></property>
+		<property name="name" value="Eric"></property>
+	</bean>
+	
+	
+</beans> 
